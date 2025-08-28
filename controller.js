@@ -139,7 +139,7 @@ Do not hallucinate actions not defined.`;
         ],
         temperature: 0.1,
       });
-      console.log(Response.choices[0].message.content);
+      finalOutput=Response.choices[0].message.content;
       chatHistory.push({ role: "assistant", content: Response.choices[0].message.content});
       intention=1;
       
